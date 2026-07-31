@@ -3,264 +3,145 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Ateliê Dri Araujo — cestas, box personalizados e decorações em Cotia."
-    />
-    <title>Ateliê Dri Araujo | Presentes que viram memórias</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
-      rel="stylesheet"
-    />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="enhancements.css" />
+    <meta name="theme-color" content="#c98270" />
+    <title>Ateliê Dri Araújo | Links</title>
+    <style>
+      :root {
+        --terracota: #bd705e;
+        --terracota-escuro: #985244;
+        --bege: #f8eee4;
+        --rosa-seco: #e8b7ae;
+        --texto: #653d35;
+        --branco: #fffaf6;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: 32px 20px;
+        color: var(--texto);
+        font-family: Georgia, "Times New Roman", serif;
+        background:
+          radial-gradient(
+            circle at 10% 8%,
+            rgba(232, 183, 174, 0.62) 0 9%,
+            transparent 9.5%
+          ),
+          radial-gradient(
+            circle at 92% 91%,
+            rgba(189, 112, 94, 0.18) 0 13%,
+            transparent 13.5%
+          ),
+          var(--bege);
+      }
+
+      main {
+        width: min(100%, 430px);
+        text-align: center;
+      }
+
+      .profile {
+        width: 118px;
+        height: 118px;
+        display: block;
+        object-fit: cover;
+        margin: 0 auto 17px;
+        border: 5px solid var(--branco);
+        border-radius: 50%;
+        box-shadow: 0 7px 22px rgba(101, 61, 53, 0.18);
+        background: var(--rosa-seco);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.55rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+      }
+
+      .subtitle {
+        margin: 8px 0 29px;
+        color: var(--terracota-escuro);
+        font-family: Arial, sans-serif;
+        font-size: 0.84rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .links {
+        display: grid;
+        gap: 14px;
+      }
+
+      .button {
+        display: block;
+        padding: 18px 20px;
+        border: 1px solid rgba(152, 82, 68, 0.13);
+        border-radius: 999px;
+        color: var(--texto);
+        background: rgba(255, 250, 246, 0.84);
+        box-shadow: 0 5px 14px rgba(101, 61, 53, 0.1);
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        transition:
+          transform 0.22s ease,
+          background-color 0.22s ease,
+          box-shadow 0.22s ease,
+          color 0.22s ease;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .button:hover,
+      .button:focus-visible,
+      .button:active {
+        color: var(--branco);
+        background: var(--terracota);
+        box-shadow: 0 9px 20px rgba(152, 82, 68, 0.25);
+        transform: translateY(-3px) scale(1.01);
+        outline: none;
+      }
+
+      .button:active {
+        transform: translateY(0) scale(0.98);
+      }
+
+      footer {
+        margin-top: 31px;
+        color: var(--terracota-escuro);
+        font-size: 0.85rem;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
-    <header class="site-header" id="topo">
-      <div class="container navigation">
-        <a class="brand" href="#topo"
-          >Ateliê Dri Araujo <small>presentes &amp; festas</small></a
-        >
-        <button
-          class="menu-toggle"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="menu" aria-label="Navegação principal">
-          <a href="#servicos">Serviços</a><a href="#inspiracoes">Inspirações</a
-          ><a href="#sobre">Sobre nós</a>
-          <a
-            class="button button-outline"
-            href="https://wa.me/5511939098308"
-            target="_blank"
-            rel="noopener"
-            >Faça seu pedido</a
-          >
-        </nav>
-      </div>
-    </header>
-
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Feito com carinho em Cotia e região</p>
-            <h1>
-              Transforme momentos especiais em <em>memórias inesquecíveis.</em>
-            </h1>
-            <p class="lead">
-              Cestas e Box de Presentes personalizadas &amp; Decorações Pegue e
-              Monte em Cotia e região.
-            </p>
-            <a
-              class="button button-primary"
-              href="https://wa.me/5511939098308"
-              target="_blank"
-              rel="noopener"
-              >Faça seu Pedido pelo WhatsApp <span>↗</span></a
-            >
-            <div class="hero-notes">
-              <span>✦ Atendimento próximo</span
-              ><span>✦ Feito para emocionar</span>
-            </div>
-          </div>
-          <div class="hero-visual reveal">
-            <span class="sparkle sparkle-one">✦</span
-            ><span class="sparkle sparkle-two">✦</span>
-            <img
-              class="main-photo"
-              src="cesta-especial.jpeg"
-              alt="Caixa de presente delicadamente embrulhada"
-            />
-            <img
-              class="side-photo"
-              src="decoracao-festa.png"
-              alt="Decoração de festa com balões"
-            />
-            <div class="visual-label">
-              Feito para surpreender <small>cada detalhe conta ✦</small>
-            </div>
-          </div>
-        </div>
-      </section>
+      <img
+        class="profile"
+        alt="Ateliê Dri Araújo"
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23e8b7ae'/%3E%3Cpath d='M0 145c39-22 63-14 95 8s69 12 105-13v60H0z' fill='%23bd705e' opacity='.55'/%3E%3Ccircle cx='100' cy='84' r='42' fill='%23f8eee4'/%3E%3Ctext x='100' y='99' text-anchor='middle' font-family='Georgia' font-size='38' fill='%23985244'%3EDRI%3C/text%3E%3C/svg%3E"
+      />
+      <h1>@ateliedriaraujo</h1>
+      <p class="subtitle">Decoração que celebra</p>
 
-      <section class="services container" id="servicos">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Um carinho em cada detalhe</p>
-          <h2>Presentes e celebrações com a sua história</h2>
-          <p>
-            Escolha uma ideia, conte o que deseja celebrar e nós cuidamos do
-            resto com afeto.
-          </p>
-        </div>
-        <div class="cards">
-          <article class="service-card reveal">
-            <div class="service-icon">🎁</div>
-            <h3>Cestas &amp; Box de Presentes</h3>
-            <p>
-              Para aniversários, namorados, Dia das Mães, dos Pais e todos os
-              seus momentos especiais.
-            </p>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon gold-icon">🎈</div>
-            <h3>Kit Pegue e Monte</h3>
-            <p>
-              Monte a festa dos seus sonhos com praticidade, beleza e um toque
-              muito especial.
-            </p>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon lilac-icon">✨</div>
-            <h3>Decorações Temáticas</h3>
-            <p>
-              Cenários afetivos para celebrar: decorações completas e Festa na
-              Mesa.
-            </p>
-          </article>
-          <article class="service-card reveal">
-            <div class="service-icon peach-icon">💌</div>
-            <h3>Lembrancinhas &amp; Mimos</h3>
-            <p>
-              Pequenos gestos personalizados para deixar sua comemoração ainda
-              mais marcante.
-            </p>
-          </article>
-        </div>
-      </section>
+      <nav class="links" aria-label="Links principais">
+        <!-- Link para o site do Simulador -->
+        <a class="button" href="../monte-sua-festa/index.html"
+          >✨ Monte sua festa</a
+        >
 
-      <section class="order-steps" id="como-pedir">
-        <div class="container">
-          <div class="section-heading reveal">
-            <p class="eyebrow">É simples e feito com carinho</p>
-            <h2>Como Fazer seu Pedido</h2>
-            <p>Do primeiro “oi” à entrega, a gente cuida de cada detalhe para você.</p>
-          </div>
-          <div class="steps-grid">
-            <article class="step reveal"><span class="step-number">01</span><h3>Escolha sua inspiração</h3><p>Escolha o presente que mais combina com a ocasião ou o tema da sua festa.</p></article>
-            <article class="step reveal"><span class="step-number">02</span><h3>Conte os detalhes</h3><p>Acerte todos os detalhes e a data pelo WhatsApp, de um jeito simples e personalizado.</p></article>
-            <article class="step reveal"><span class="step-number">03</span><h3>Receba com carinho</h3><p>Receba em Cotia e região, preparado com todo carinho para surpreender.</p></article>
-          </div>
-        </div>
-      </section>
+        <!-- Link para o site do Catálogo/Landing Page -->
+        <a class="button" href="./catalogo/index.html">🎈 Nosso Catálogo</a>
+      </nav>
 
-      <section class="inspirations" id="inspiracoes">
-        <div class="container inspiration-grid">
-          <div class="instagram-preview reveal">
-            <div class="phone-top"><span></span><span></span><span></span></div>
-            <img
-              src="atelie-dri-instagram.png"
-              alt="Perfil e trabalhos do Instagram do Ateliê Dri Araujo"
-            />
-            <div class="phone-shine"></div>
-          </div>
-          <div class="inspiration-copy reveal">
-            <p class="eyebrow">Inspirações do Ateliê</p>
-            <h2>Celebrar é dar forma ao carinho.</h2>
-            <p>
-              Das cestas cheias de afeto às festas mais coloridas, cada criação
-              do Ateliê Dri Araujo nasce para fazer alguém sorrir.
-            </p>
-            <p>
-              Conheça nossos trabalhos e encontre a inspiração perfeita para o
-              seu próximo momento especial.
-            </p>
-            <a
-              class="text-link"
-              href="https://instagram.com/ateliedriaraujo"
-              target="_blank"
-              rel="noopener"
-              >Acompanhe no Instagram <span>→</span></a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section class="why" id="sobre">
-        <div class="container why-grid">
-          <img
-            class="why-image reveal"
-            src="cestas-presentes.jpeg"
-            alt="Mesa com presentes e flores em tons suaves"
-          />
-          <div class="why-copy reveal">
-            <p class="eyebrow">Por que escolher a gente?</p>
-            <h2>A celebração é sua. O cuidado também.</h2>
-            <div class="features">
-              <div class="feature">
-                <b>✓</b>
-                <p>
-                  <strong>Atendimento humanizado</strong
-                  ><span
-                    >Uma conversa de verdade para transformar sua ideia em algo
-                    único.</span
-                  >
-                </p>
-              </div>
-              <div class="feature">
-                <b>✓</b>
-                <p>
-                  <strong>Qualidade escolhida a dedo</strong
-                  ><span
-                    >Materiais, sabores e detalhes que encantam desde o primeiro
-                    olhar.</span
-                  >
-                </p>
-              </div>
-              <div class="feature">
-                <b>✓</b>
-                <p>
-                  <strong>Entrega em Cotia e região</strong
-                  ><span
-                    >Seu carinho chega com segurança, pontualidade e muito
-                    capricho.</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="final">
-        <div class="container reveal">
-          <p class="eyebrow centered">Seu momento começa aqui</p>
-          <h2>Quer surpreender alguém especial hoje?</h2>
-          <p>
-            Chame a Dri, conte sua ideia e vamos criar algo inesquecível juntas.
-          </p>
-          <a
-            class="button button-primary"
-            href="https://wa.me/5511939098308"
-            target="_blank"
-            rel="noopener"
-            >Falar no WhatsApp Agora <span>→</span></a
-          >
-        </div>
-      </section>
+      <footer>Feito para celebrar momentos especiais</footer>
     </main>
-    <a class="whatsapp-float" href="https://wa.me/5511939098308" target="_blank" rel="noopener" aria-label="Falar pelo WhatsApp">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.47 14.38c-.29-.15-1.72-.85-1.99-.95-.27-.1-.47-.15-.67.15s-.77.95-.94 1.14c-.17.2-.35.22-.64.07-.29-.15-1.23-.45-2.34-1.43-.86-.77-1.45-1.72-1.62-2.01-.17-.3-.02-.46.13-.61.13-.13.29-.35.44-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.91-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.62.71.23 1.35.2 1.86.12.57-.08 1.72-.7 1.97-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.2-.55-.35zM12.04 2C6.51 2 2.02 6.49 2.02 12.02c0 1.77.46 3.43 1.27 4.87L2 22l5.24-1.37a9.98 9.98 0 0 0 4.8 1.22h.01c5.52 0 9.98-4.49 9.98-10.02C22.03 6.49 17.56 2 12.04 2zm0 18.15h-.01a8.24 8.24 0 0 1-4.2-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.25 8.25 0 1 1 6.99 3.85z"/></svg>
-      <span>WhatsApp</span>
-    </a>
-    <footer>
-      <div class="container footer-content">
-        <a class="brand" href="#topo"
-          >Ateliê Dri Araujo <small>presentes &amp; festas</small></a
-        >
-        <p>Feito com amor para celebrar seus momentos.</p>
-        <a
-          href="https://instagram.com/ateliedriaraujo"
-          target="_blank"
-          rel="noopener"
-          >Instagram ↗</a
-        >
-      </div>
-    </footer>
-    <script src="script.js"></script>
   </body>
 </html>
