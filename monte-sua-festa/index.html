@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
     <main class="page-shell">
@@ -34,22 +35,22 @@
           <div class="choice-grid themes">
             <label class="choice-card theme-card">
               <input type="radio" name="theme" value="Infantil" />
-              <span class="theme-icon">♘</span><span>Infantil</span
+              <i class="ph ph-horse theme-icon"></i><span>Infantil</span
               ><small>Um mundo de fantasia</small>
             </label>
             <label class="choice-card theme-card">
               <input type="radio" name="theme" value="Batizado" />
-              <span class="theme-icon">♡</span><span>Batizado</span
+              <i class="ph ph-heart theme-icon"></i><span>Batizado</span
               ><small>Leveza e delicadeza</small>
             </label>
             <label class="choice-card theme-card">
               <input type="radio" name="theme" value="Casamento" />
-              <span class="theme-icon">⌘</span><span>Casamento</span
+              <i class="ph ph-users theme-icon"></i><span>Casamento</span
               ><small>Para celebrar o amor</small>
             </label>
             <label class="choice-card theme-card">
               <input type="radio" name="theme" value="Aniversário Adulto" />
-              <span class="theme-icon">✺</span><span>Aniversário</span
+              <i class="ph ph-confetti theme-icon"></i><span>Aniversário</span
               ><small>Seu momento, seu estilo</small>
             </label>
           </div>
@@ -79,27 +80,27 @@
                 type="radio"
                 name="package"
                 value="Decoração Mini Table"
-                data-price="450"
+                data-price="350"
               />
               <span class="radio-dot"></span
               ><span class="package-content"
                 ><strong>Decoração Mini Table</strong
                 ><small>Uma mesa encantadora e completa</small></span
-              ><b>R$ 450</b>
+              ><b>R$ 350</b>
             </label>
             <label class="choice-card package-card featured">
               <input
                 type="radio"
                 name="package"
                 value="Festa Completa Premium"
-                data-price="850"
+                data-price="550"
               />
               <span class="badge">Mais escolhido</span
               ><span class="radio-dot"></span
               ><span class="package-content"
                 ><strong>Festa Completa Premium</strong
                 ><small>Experiência completa, sem preocupações</small></span
-              ><b>R$ 850</b>
+              ><b>R$ 550</b>
             </label>
           </div>
         </fieldset>
@@ -169,7 +170,7 @@
         <a
           id="whatsapp-button"
           class="whatsapp-button"
-          href="#"
+          href="https://wa.me/5511939098308"
           target="_blank"
           rel="noopener"
           aria-label="Finalizar pedido pelo WhatsApp"
@@ -184,7 +185,6 @@
       </div>
     </aside>
 
-    <!-- Importe o JavaScript no final do body, após todo o HTML da página. -->
     <script src="script.js"></script>
   </body>
 </html>
